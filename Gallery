@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Gallery</title>
+
+    </head>
+    <body>
+        <br> <a href="Home">Link to Hope Page</a> </br> 
+        <br> <a href="Featured">Link to Featured Art</a> </br>
+        <br> <a href="Full Body">Link to Full Body Gallery</a> </br>
+        <br> <a href="Portraits">Link to Portraits Gallery</a> </br>
+        <br> <a href="OC">Link to Original Characters</a> </br>
+    </body>
+</html>
