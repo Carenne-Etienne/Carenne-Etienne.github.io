@@ -3,7 +3,14 @@ h1 {
 }
 
 #logo {
-    position:fixed ;
+    position:absolute ;
     top:0px;
     left:0px;
 }
+
+#bgtop {
+    position:-ms-page;
+    top:10px;
+    left:100px;
+}
+
