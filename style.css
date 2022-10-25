@@ -1,4 +1,12 @@
-h1 {
+ #txtL{
+    text-align:left
+}
+
+#txtR{
+    text-align:right
+}
+
+#txtC{
     text-align:center
 }
 
@@ -13,5 +21,11 @@ h1 {
     margin: 0px auto;
 }
 
-
+#box {
+    position:absolute;
+    top: 200px;
+    left:0px;
+    height: 75px;
+    width: 1920px;
+    background-color: black;}
 
