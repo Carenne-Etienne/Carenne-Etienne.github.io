@@ -1,64 +1,45 @@
 <html>
- <head>
+    <head>
         <script src="helloworld.js"></script>
         <link rel="stylesheet" href="style.css">
-        <title>My Digital Art Gallery</title>
- </head>
- <body style= background-image:url(images/bgimg.png);>
-        <button onclick="hello()">
-        Press Me
-        </button>       
-        <div style="
-            padding: 10px;
-            font-family: Beckman, Bebas Neue, Century Gothic;
-            font-size: 16pt;
-            color: #ffffff;
-            ">
+        <title>Home Page</title>
+    </head>
+    <body id="pagestyle">
 
-            <img src="images/full name banner.png" height="200" id="img-align-center">
-            
-            <div id="box" >
-                <a href="gallery.html" > Full Gallery</a>
-                <a href="forms.html" > Commissions</a>
-                <a href="aboutme.html"> About Me</a>  
-            </div>
-            
-            <!--<img src="images/banner.png"> -->
-
-            <h2>Welcome to my gallery!</h2>
-            <p>background image to be geometric design with logo colors (dark)</p>
-            <p>Place holder for about me/welcome paragraph...</p>
-            <p>Here's some <b>bold</b> and <i>italic</i> text...</p>
-            
-     </div>
-
-
-                <!-- Things to add/fix
-                        Gallery page
-                            Table layout for images meh
-                        Home/Main Page
-                            Links to other pages
-                            Overview 
-                            Short paragraph about me
-                        Background Image
-                        Forms
-                            Commissions and request form
-                        About Me page
-                            Background Info-->
- </body>
-</html> <!-- tags that have content must be closed -->
-
-<!-- update your website
-
-add a second webpage
-add image(s)
-add links to jump between the two webpages
-use every tag and attribute mentioned in this week's lecture (e.g., add different headings, paragraphs, make some text bold, some italic, add images with different sizes)
-add comment atop index.html with your name, course name
-check with liveserver to make sure everything looks good
-commit to github
-check to make sure your github.io website renders correctly
-submit link to your website below
-
-Extra credit:
-use bootstrap or tailwind or material framework to add some aesthetics to your site -->
+        <table width="100%" height="100%" border="1" >
+            <tbody>
+                <tr>
+                    <td rowspan="1"colspan="1" height="100" bgcolor="black">
+                    <img src="images/Gradient logo with name.png" height="300">
+                    </td>
+                    <td colspan="2" rowspan="1" height="300">
+                        <img src="images/banner.png" width="100%">
+                        <!--<h1> This is the Header</h1>-->
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="3" width="350"> 
+                        <h2>Navigation Tab</h2>
+                        <h2><a href="index.html">Link to Home Page</a> </br></h2>
+                        <h2><a href="aboutme.html"> About Me</a></h2> 
+                        <h2><a href="gallery.html" > Full Gallery</a></h2>
+                        <h2><a href="forms.html" > Commissions</a></h2>
+                        <h2><a href="homeTRL.html">Link to 2nd Home Page</a></h2>
+                    </td>
+                    <td rowspan="2">
+                        <h3 id="txtC" >My Name is Astera Garnet and I am a self-taught digital artist! 
+                            I first started in art as a kid doing traditional art and sketching both 
+                            at home and at school. When I entered middle school I was encouraged by my 
+                            art teachers to engage in art a lot more to learn and discover new and 
+                            different mediums. I explored painting, sculpting, and crafting until I 
+                            came across digital art in high school. Now I do digital art on the side 
+                            while I finish college and hope to continue to grow and learn in the craft 
+                            as time goes on! I hope you join me for the ride as I continue to grow and 
+                            learn!</h3>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
