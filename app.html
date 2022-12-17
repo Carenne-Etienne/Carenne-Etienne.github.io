@@ -1,0 +1,78 @@
+<html>
+ <head>
+        <script src="helloworld.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>My Digital Art Gallery</title>
+
+        <meta name="viewport"
+            content="width=device-width,
+            initial-scale=1.0,
+            user-scalable=no">
+
+            <script>
+                function allowDrop(even) {
+                    even.preventDefault();
+                }
+             
+                function drag(even) {
+                    even.dataTransfer.setData("text", even.target.id);
+                }
+             
+                function drop(even) {
+                    even.preventDefault();
+                    var fetchData = even.dataTransfer.getData("text");
+                    even.target.appendChild(document.getElementById(fetchData));
+                }
+            </script>
+ </head>
+ <body>
+      
+        <div style="
+            padding: 10px;
+            font-family: Beckman, Bebas Neue, Century Gothic;
+            font-size: 16pt;
+            color: #ffffff;
+            ">
+
+            <div id="getData"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)">
+            </div>
+
+            <table width="250" border="yellow">
+                <tr width="250" border="yellow">
+                    <button onclick="hello()" style="font-family: Beckman, Bebas Neue, Century Gothic;">
+                        <h2>Press Me to Start!</h2>
+                    </button> 
+                </tr>
+                <tr>
+                    <td rowspan="3" width="250" border="yellow"> 
+                        <h2><mark>Navigation Tab</mark></h2>
+                        <h2><a href="testing.html">Link to Trial Page</a> </br></h2>
+                        <h2><a href="aboutme.html"> About Me</a></h2> 
+                        <h2><a href="gallery.html" > Full Gallery</a></h2>
+                        <h2><a href="forms.html" > Commissions</a></h2>
+                        <h2><a href="app.html">Link to Web App</a></h2>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="box">
+                <img src="images/cyberpunk_archer_by_asterazelda_df6d5fb (2).png" width="50%">
+                <img src="images/alien_fashion.jpeg" width="50%">
+            </div>
+
+            <div class="box2" class="row">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/alienRef1.jpg" width="40%">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/alienRef2.jpg" width="40%">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/alienRef3.png" width="40%">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/archerRef1.jpg" width="40%">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/archerRef2.png" width="40%">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/archerRef3.jpg" width="40%">
+                <img id="dragData" draggable="true" ondragstart="drag(event)" src="ref/archerRef4.jpg" width="40%">
+            </div>
+     </div>
+
+
+ </body>
+</html> 

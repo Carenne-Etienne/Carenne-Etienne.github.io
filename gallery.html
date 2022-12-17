@@ -1,4 +1,37 @@
 <html>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+        }
+        
+        .column img {
+          margin-top: 12px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Gallery</title>
@@ -12,23 +45,56 @@
         "> 
 
             <img src="images/full name banner.png" height="200" id="img-align-center">
-
-            <br> <a href="index.html">Link to Home Page</a> </br> 
-            <br> <a href="featured.html">Link to Featured Art</a> </br>
+            <table width="100%" border="2"> 
+                <tbody>
+                    <tr>
+                        <td id="txtC"><h1>
+                            <a href="index.html"><mark>Home Page</mark></a> 
+                            <a href="aboutme.html"><mark>About Me</mark></a>
+                            <a href="forms.html" ><mark>Commissions</mark></a>
+                            <a href="app.html"><mark>Web App</mark></a>
+                        </td></h1>
+                    </tr>
+                </tbody>
+            </table>
 
             <!--image reference tables -->
-            <table border="5">
-                <tr>
-                    <td rowspan> <img src="images/alien_fashion.jpeg" alt="Alien Fashion" srcset="" width="450"> </td>
-                    <td colspan> <img src="images/dancing_sky.jpg" alt="Dancing in The Sky" srcset="" height="450"> </td>
-                    <td> tabs </td>
-                </tr>
-                <tr>
-                    <td> page bg </td>
-                    <td> page content </td>
-                    <td> F </td>
-                </tr>
-            </table>
+            <div class="row"> 
+                <div class="column">
+                <br><img src="images/cyberpunk_archer_by_asterazelda_df6d5fb (2).png" style="width:100%"></br>
+                <img src="images/dancing_sky.jpg" style="width:100%">
+                <img src="images/request_barOC.jpg" style="width:100%">
+                <img src="images/alien_fashion.jpeg" style="width:100%">
+                <img src="images/teal_haired_flower_girl_by_asterazelda_deutp5i.jpg" style="width:100%">
+                <img src="images/armani__ergo_josh_s_dtiys_oc__by_asterazelda_dehts6l.jpg" style="width:100%">
+                <img src="images/retro_lemon_girl_oc_by_asterazelda_deb0s4y.png" style="width:100%">
+                <img src="images/astera_garnet___asterazelda_art___instagram_pho_by_asterazelda_dea8op1.png" style="width:100%">
+                <img src="images/Ergo400k.png" style="width:100%">
+                <img src="images/an_afro_futuristic_mediterranean_princess_by_asterazelda_de650xh.png" style="width:100%">
+                <img src="images/the_neon_alien___ergo_josh_s_dtiys__by_asterazelda_de3jig1.png" style="width:100%">
+                <img src="images/the_neon_alien___ergo_josh_s_dtiys__by_asterazelda_de3jig1.png" style="width:100%">
+                <img src="images/black_girl_bumble_bee_by_asterazelda_ddzx4hm.png" style="width:100%">
+                <img src="images/black_girl_beauty_by_asterazelda_ddyvkia.png" style="width:100%">
+                <!-- <img src="images/" style="width:100%"> -->
+                </div>
+
+                <div class="column">
+                    <img src="images/cyberpunk_archer_by_asterazelda_df6d5fb (2).png" style="width:100%">
+                    <img src="images/dancing_sky.jpg" style="width:100%">
+                    <img src="images/request_barOC.jpg" style="width:100%">
+                    <img src="images/alien_fashion.jpeg" style="width:100%">
+                    <img src="images/teal_haired_flower_girl_by_asterazelda_deutp5i.jpg" style="width:100%">
+                    <img src="images/armani__ergo_josh_s_dtiys_oc__by_asterazelda_dehts6l.jpg" style="width:100%">
+                    <img src="images/retro_lemon_girl_oc_by_asterazelda_deb0s4y.png" style="width:100%">
+                    <img src="images/astera_garnet___asterazelda_art___instagram_pho_by_asterazelda_dea8op1.png" style="width:100%">
+                    <img src="images/Ergo400k.png" style="width:100%">
+                    <img src="images/an_afro_futuristic_mediterranean_princess_by_asterazelda_de650xh.png" style="width:100%">
+                    <img src="images/the_neon_alien___ergo_josh_s_dtiys__by_asterazelda_de3jig1.png" style="width:100%">
+                    <img src="images/the_neon_alien___ergo_josh_s_dtiys__by_asterazelda_de3jig1.png" style="width:100%">
+                    <img src="images/black_girl_bumble_bee_by_asterazelda_ddzx4hm.png" style="width:100%">
+                    <img src="images/black_girl_beauty_by_asterazelda_ddyvkia.png" style="width:100%">
+                    <!-- <img src="images/" style="width:100%"> -->
+                    </div>
         </div>
        
     </body>

@@ -42,12 +42,74 @@
     color: white;
 }
 
-body{
+#body{
     background-color: black;
 }
+
+#txtwrp {
+    word-wrap: normal;
+}
+
 @media screen and (min-width: 800px) {
     body {
         background-image:url(images/bgimg.png);
     }
 
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+#body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display:grid;
+    clear: right;
+  }
+
+  .box{
+    width: 50%;
+    height: 75%;
+    border: 5px solid yellow;
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    }
+
+    .box2{
+        width: 25%;
+        height: 75%;
+        border: 5px solid yellow;
+        position: absolute;
+        top: 80px;
+        left: 1300px;
+        }
+
+        #getData {
+            width: 250px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #4f4d4d;
+        }
